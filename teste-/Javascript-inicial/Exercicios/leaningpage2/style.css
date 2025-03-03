@@ -1,0 +1,344 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #004d98; /* Azul do Barcelona */
+    color: #ffffff;
+}
+
+.navbar.bg-warning {
+    background-color: grey !important;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link[href="#footer"] {
+    color: #004d98;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link[href="#footer"]:hover {
+    color: #a50044;
+}
+
+.img-logo {
+    width: 50px;
+    height: auto;
+}
+
+section {
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Seção 1 - Foto à esquerda da descrição */
+#s1 {
+    background-color: red; /* Vermelho do Barcelona */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px; /* Aumentei o espaçamento entre a foto e a descrição */
+    padding: 40px; /* Aumentei o padding para dar mais espaço */
+    flex-wrap: wrap;
+}
+
+.s1-left {
+    width: 40%;
+    max-width: 350px; /* Aumentei a largura máxima da foto */
+    display: flex;
+    justify-content: center;
+}
+
+.s1-right {
+    width: 50%;
+    max-width: 700px; /* Aumentei a largura máxima da descrição */
+    text-align: left;
+}
+
+.wrap-img {
+    width: 220px; /* Aumentei o tamanho da foto */
+    height: 220px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.img-s1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title-name {
+    font-family: "Sigmar", serif;
+    font-size: 2.5rem; /* Aumentei o tamanho do título */
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#s1 p {
+    font-size: 1.1rem; /* Aumentei o tamanho do texto */
+    line-height: 1.8;
+    color: #f0f0f0;
+    margin-bottom: 25px;
+}
+
+/* Seção 2 - Cards menores e alinhados */
+#s2 {
+    background-color: #004d98; /* Azul do Barcelona */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#s2 h2 {
+    font-size: 2rem; /* Aumentei o tamanho do título */
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Sigmar", serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cards-ídolos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Aumentei o espaçamento entre os cards */
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.cartao {
+    background-color: black; /* Fundo preto */
+    width: 220px; /* Aumentei o tamanho dos cards */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cartao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.wrap-img-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.wrap-img-card img {
+    width: 120px; /* Aumentei o tamanho da imagem */
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrap-info-card h3 {
+    font-size: 1.4rem; /* Aumentei o tamanho do título */
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Sigmar", serif;
+}
+
+.wrap-info-card p {
+    font-size: 1rem; /* Aumentei o tamanho do texto */
+    color: #f0f0f0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Seção 3 - Botões com fundo vermelho e botões pretos */
+#s3 {
+    background-color: red; /* Vermelho do Barcelona */
+    min-height: 100vh;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#s3 h2 {
+    font-size: 2rem; /* Aumentei o tamanho do título */
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-family: "Sigmar", serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.botoes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px; /* Aumentei o espaçamento entre os botões */
+    justify-content: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+.botao-link {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #000000; /* Fundo preto */
+    padding: 20px 40px; /* Aumentei o padding dos botões */
+    border-radius: 10px;
+    font-size: 1.1rem; /* Aumentei o tamanho do texto */
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid transparent;
+}
+
+.botao-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    background-color: #333333; /* Cor mais clara ao passar o mouse */
+    border-color: #ffffff; /* Borda branca ao passar o mouse */
+}
+
+/* Media Queries para Telas Menores */
+@media (max-width: 768px) {
+    .botoes-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botao-link {
+        width: 80%;
+        max-width: 300px;
+    }
+}
+
+/* Seção 4 - Cards em 4 em cima e 4 embaixo */
+#s4 {
+    background-color: #004d98; /* Azul do Barcelona */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#s4 h2 {
+    font-size: 2rem; /* Aumentei o tamanho do título */
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Sigmar", serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cards-titulos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Aumentei o espaçamento entre os cards */
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.cards-titulos .cartao {
+    width: 220px; /* Aumentei o tamanho dos cards */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards-titulos .cartao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Footer */
+footer {
+    background-color: black; /* Fundo preto */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+}
+
+footer h2 {
+    font-size: 1.4rem; /* Aumentei o tamanho do título */
+    color: #ffffff;
+    font-family: "Sigmar", serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px; /* Aumentei o espaçamento entre os ícones */
+}
+
+.social-icons a img {
+    width: 35px; /* Aumentei o tamanho dos ícones */
+    height: 35px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+/* Media Queries para Telas Menores */
+@media (max-width: 768px) {
+    .s1-left, .s1-right {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .s1-left {
+        order: 1; /* Foto acima em telas menores */
+    }
+
+    .s1-right {
+        order: 2; /* Descrição abaixo em telas menores */
+    }
+
+    .cartao {
+        width: 180px; /* Cards ainda menores em telas pequenas */
+    }
+
+    .wrap-img-card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .wrap-info-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .wrap-info-card p {
+        font-size: 0.9rem;
+    }
+}

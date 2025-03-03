@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #282c34; /* Fundo escuro moderno */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    gap: 5px;
+    font-size: 12px;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 10px;
+    background-color: #3a3f47; /* Fundo do container escuro */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #61dafb; /* Cor azul vibrante */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.column {
+    width: 48%;
+    padding: 10px;
+    border: 2px solid #61dafb; /* Borda azul vibrante */
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    background-color: #4a4f57; /* Fundo das colunas escuro */
+}
+
+h2 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #61dafb; /* Cor azul vibrante */
+}
+
+label, input, button, p {
+    color: #ffffff;
+    font-size: 10px;
+    display: block;
+    width: 100%;
+    margin: 3px 0;
+}
+
+input, button {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 10px;
+    color: #282c34;
+}
+
+input {
+    background-color: #61dafb; /* Fundo azul claro para inputs */
+}
+
+button {
+    background-color: #61dafb; /* Fundo azul vibrante para botões */
+    color: #282c34; /* Texto escuro para contraste */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #21a1f1; /* Efeito hover mais claro */
+}
+
+span {
+    font-size: 10px;
+}
+
+section:last-of-type {
+    width: 48%;
+}

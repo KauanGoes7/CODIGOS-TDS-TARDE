@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - ref javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <h1>Calculos com funções de parametros</h1>
+    <main>
+<section>
+    <h2>Função de somar</h2>
+    <input type="number" id = "n1" placeholder="Insira o numero"></input>
+    <input type="number" id = "n2" placeholder="Insira o numero"></input>
+    <button onclick="calcular('n1','n2','respSOMAR','+')">CALCULAR</button>
+    <p id= "respSOMAR"></p>
+</section>
+<section>
+    <h2>Função de subtração</h2>
+    <input type="number" id = "n3" placeholder="Insira o numero"></input>
+    <input type="number" id = "n4" placeholder="Insira o numero"></input>
+    <button onclick="calcular('n3','n4','respSUB','-')">CALCULAR</button>
+    <p id= "respSUB"></p>
+</section>
+<section>
+<h2>função de multiplicação</h2>
+<input type="number" id = "n5" placeholder="Insira o numero"></input>
+<input type="number" id = "n6" placeholder="Insira o numero"></input>
+<button onclick="calcular('n5','n6','respMULTI','*')">CALCULAR</button>
+<p id= "respMULTI"></p>
+</section>
+<section>
+    <h2>função de divisão</h2>
+    <input type="number" id = "n7" placeholder="Insira o numero"></input>
+    <input type="number" id = "n8" placeholder="Insira o numero"></input>
+    <button onclick="calcular('n7','n8','respDIV','/')">CALCULAR</button>
+    <p id= "respDIV"></p>
+</section>
+
+
+
+    </main>
+    
+</body>
+</html>
