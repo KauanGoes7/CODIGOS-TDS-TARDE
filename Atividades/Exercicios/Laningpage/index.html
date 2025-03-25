@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BARCELONA.com</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -14,8 +12,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
-</head>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .nav-link {
+            color: white !important; /* Define a cor do texto como branco */
+        }
 
+        #conteudo-carrinho {
+            color: white; /* Define a cor do texto do carrinho como branco */
+        }
+
+        #total {
+            color: white; /* Define a cor do texto do total como branco */
+        }
+    </style>
+</head>
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-warning">
         <div class="container-fluid">
@@ -26,283 +39,30 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="#s1">Inicio</a>
-                    <a class="nav-link" href="#s2">Ídolos</a>
-                    <a class="nav-link" href="#s3">Jogos Inesquecíveis</a>
-                    <a class="nav-link" href="#s4">Títulos Do Barcelona</a>
-                    <a class="nav-link" href="#footer">Redes Sociais</a>                  
-                    
+                    <a class="nav-link" href="../Loja/index.html">Voltar Ao Menu Da Loja</a>
                 </div>
             </div>
         </div>
     </nav>
-    <main>
-        <section id="s1">
-            <div class="s1-left">
-                <div class="wrap-img">
-                    <img class="img-s1" src="./imagens/FCBarcelona.svg-removebg-preview.png" alt="Profile">
-                </div>
-            </div>
-            <div class="s1-right">
-                <h2 class="title-name animate__animated animate__fadeInDown">BARCELONA</h2>
-                <p class="animate__animated animate__fadeInUp animate__delay-1s">
-                    O FC Barcelona é mais que um clube. É um símbolo de paixão, tradição e excelência no futebol. 
-                    Fundado em 1899, o Barça conquistou o mundo não apenas com seus títulos, mas também com 
-                    um estilo de jogo único e inesquecível. Dos gramados do Camp Nou aos estádios mais emblemáticos 
-                    do planeta, o Barcelona construiu uma história repleta de glórias, com jogadores lendários que 
-                    eternizaram seus nomes no esporte. Neste site, celebramos as conquistas, os momentos memoráveis 
-                    e os heróis que fizeram do Barça um dos maiores clubes de todos os tempos. Bem-vindo à casa do 
-                    Més que un club!
-                </p>
-            </div>
-        </section>
-        <section id="s2">
-            <h2>OS MAIORES ÍDOLOS DA HISTÓRIA DO BARCELONA</h2>
-            <div class="cards-ídolos">
-                <div class="cartao">
-                    <div class="wrap-img-card">
-                        <img src="./imagens/messi.jpeg" alt="Lionel Messi" width="80px" height="auto">
-                    </div>
-                    <div class="wrap-info-card">
-                        <h3>LIONEL MESSI</h3>
-                        <p>O maior de todos os tempos. Ídolo do Barcelona e lenda do futebol, Messi marcou mais de 670 gols, levou o Barça a 4 Champions League e 10 títulos da La Liga. Sua habilidade, visão e humildade o tornam o símbolo máximo do clube.</p>
-                    </div>
-                </div>
-        
-                <div class="cartao">
-                    <div class="wrap-img-card">
-                        <img src="./imagens/download.jpeg" alt="Johan Cruyff" width="80px" height="auto">
-                    </div>
-                    <div class="wrap-info-card">
-                        <h3>Johan Cruyff</h3>
-                        <p>O arquiteto do futebol moderno. Como jogador e técnico, revolucionou o Barça, criando o 'Dream Team' e o estilo de jogo que define o clube até hoje. Pai do 'futebol total'.</p>
-                    </div>
-                </div>
-        
-                <div class="cartao">
-                    <div class="wrap-img-card">
-                        <img src="./imagens/xavi.jpeg" alt="Xavi Hernández" width="80px" height="auto">
-                    </div>
-                    <div class="wrap-info-card">
-                        <h3>Xavi Hernández</h3>
-                        <p>O maestro do meio-campo. Com precisão e inteligência, foi peça central do time que dominou o futebol entre 2008 e 2015, conquistando 8 títulos da La Liga e 4 Champions League. Símbolo do 'tiki-taka'.</p>
-                    </div>
-                </div>
-        
-                <div class="cartao">
-                    <div class="wrap-img-card">
-                        <img src="./imagens/iniesta.jpeg" alt="Andrés Iniesta" width="80px" height="auto">
-                    </div>
-                    <div class="wrap-info-card">
-                        <h3>Andrés Iniesta</h3>
-                        <p>Encantou o mundo com sua técnica e decisões cruciais. Autor do gol mais importante da história do Barça, na final da Champions de 2009, foi fundamental para a era de ouro do clube. Ídolo eterno.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="s3">
-            <h2>5 Maiores Jogos Do Barcelona</h2> 
-            <div class="wrap-acc">
-                
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Barcelona 5-0 Real Madrid (2010)
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            Conhecido como o "Manita", este jogo é um dos maiores clássicos da história do futebol. 
-                            Sob o comando de Pep Guardiola, o Barcelona deu uma aula de futebol, com um desempenho dominante que incluiu gols de Xavi, Pedro, David Villa (2) e Jeffrén. 
-                            Este jogo simbolizou o auge do "tiki-taka" e a superioridade do Barça sobre o Real Madrid na era moderna.
-                            <br>
-                            <a target="_blank" href="https://youtu.be/5mLnuCORMrU?si=3fZDmijUjxh9nNfI">Veja Os Melhores Momentos Deste Jogo</a>
-                        </div>
-                    </div>
-                </div>
-        
-                
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Barcelona 3-1 Manchester United (Final da Champions League 2011)
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            Considerada uma das maiores exibições do Barcelona, o time de Guardiola enfrentou o Manchester United na final da Champions League em Wembley. 
-                            Com gols de Pedro, Messi e Villa, o Barça dominou o jogo com seu estilo de posse de bola e toques precisos. Este jogo consolidou o Barcelona como o melhor time do mundo na época.
-                            <br>
-                            <a target="_blank" href="https://youtu.be/nGa5Xq2nk6s?si=k-V-GuAu1HoDBOUD">Veja Os Melhores Momentos Deste Jogo</a>
-                        </div>
-                    </div>
-                </div>
-        
-                
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            Barcelona 6-1 PSG (2017 - Remontada Histórica)
-                        </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            Conhecida como "La Remontada", esta partida é um dos maiores feitos da história do futebol. 
-                            Após perder por 4-0 no primeiro jogo, o Barcelona fez uma virada épica no Camp Nou, vencendo por 6-1, com um gol decisivo de Sergi Roberto nos acréscimos. 
-                            Este jogo é lembrado como um dos momentos mais emocionantes do esporte.
-                            <br>
-                            <a target="_blank" href="https://youtu.be/NtkZVru6_No?si=InklQqAwOLJI096-">Veja Os Melhores Momentos Deste Jogo</a>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Jogo 4: Barcelona 5-0 Real Madrid (1974) -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                            Barcelona 5-0 Real Madrid (1974)
-                        </button>
-                    </h2>
-                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            Um dos maiores clássicos da história do futebol espanhol. Sob o comando de Rinus Michels e com Johan Cruyff em campo, o Barcelona deu um show de bola e goleou o Real Madrid por 5-0 no Camp Nou. 
-                            Este jogo marcou a consolidação do "futebol total" no Barça e é lembrado como uma das maiores vitórias da história do clube.
-                            <br>
-                            <a target="_blank" href="https://youtu.be/m5r0s5pYz44?si=sLkEpioSxY0YF30Z">Veja Os Melhores Momentos Deste Jogo</a>
-                        </div>
-                    </div>
-                </div>
-        
-                
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingFive">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                            Barcelona 3-0 Bayern de Munique (2015 - Champions League)
-                        </button>
-                    </h2>
-                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            Na semifinal da Champions League de 2015, o Barcelona enfrentou o Bayern de Munique e venceu por 3-0 no Camp Nou, com gols de Messi (2) e Neymar. 
-                            O desempenho do Barça, especialmente de Messi, foi espetacular, e o clube avançou para a final, onde conquistou o título.
-                            <br>
-                            <a target="_blank" href="https://youtu.be/YAc3W_k6soQ?si=vsZvscIaGza3-s9d">Veja Os Melhores Momentos Deste Jogo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="s4">
-            <h2>Todos os Títulos do Barcelona</h2> 
-            <div class="cards-titulos">
-                
-                <div class="cartao">
-                    <div class="wrap-img-card">
-                        <img src="./imagens/champions-removebg-preview.png" alt="Champions League" width="80px" height="auto">
-                    </div>
-                    <div class="wrap-info-card">
-                        <h3>Champions League</h3>
-                        <p>5 títulos (1992, 2006, 2009, 2011, 2015). Domínio absoluto, como na final de 2011 contra o Manchester United.</p>
-                    </div>
-                </div>
-        
-                
-                <div class="cartao">
-                    <div class="wrap-img-card">
-                        <img src="./imagens/la_liga-removebg-preview.png" alt="La Liga" width="80px" height="auto">
-                    </div>
-                    <div class="wrap-info-card">
-                        <h3>La Liga</h3>
-                        <p>26 títulos. Domínio em várias eras, especialmente com Cruyff, Guardiola e Luis Enrique.</p>
-                    </div>
-                </div>
-        
-                
-                <div class="cartao">
-                    <div class="wrap-img-card">
-                        <img src="./imagens/copa_del_rey-removebg-preview.png" alt="Copa del Rey" width="80px" height="auto">
-                    </div>
-                    <div class="wrap-info-card">
-                        <h3>Copa del Rey</h3>
-                        <p>31 títulos. Maior vencedor, com finais memoráveis e atuações brilhantes.</p>
-                    </div>
-                </div>
-        
-                
-                <div class="cartao">
-                    <div class="wrap-img-card">
-                        <img src="./imagens/mundial-removebg-preview.png" alt="Mundial de Clubes" width="80px" height="auto">
-                    </div>
-                    <div class="wrap-info-card">
-                        <h3>Mundial de Clubes</h3>
-                        <p> 3 títulos (2009, 2011, 2015). Consagrou o Barça como o melhor do mundo.</p>
-                    </div>
-                </div>
-        
-                
-                <div class="cartao">
-                    <div class="wrap-img-card">
-                        <img src="./imagens/gettyimages-1456619569-612x612-removebg-preview.png" alt="Supercopa da Espanha" width="80px" height="auto">
-                    </div>
-                    <div class="wrap-info-card">
-                        <h3>Supercopa da Espanha</h3>
-                        <p>14 títulos. Disputada entre os campeões da La Liga e Copa del Rey.</p>
-                    </div>
-                </div>
-        
-                
-                <div class="cartao">
-                    <div class="wrap-img-card">
-                        <img src="./imagens/uefa-removebg-preview.png" alt="Supercopa da UEFA" width="80px" height="auto">
-                    </div>
-                    <div class="wrap-info-card">
-                        <h3>Supercopa da UEFA</h3>
-                        <p> 5 títulos (1992, 1997, 2009, 2011, 2015). Enfrentando campeões da UCL e Liga Europa.</p>
-                    </div>
-                </div>
-        
-                
-                <div class="cartao">
-                    <div class="wrap-img-card">
-                        <img src="./imagens/feiras-removebg-preview.png" alt="Copa das Cidades com Feiras" width="80px" height="auto">
-                    </div>
-                    <div class="wrap-info-card">
-                        <h3>Copa das Cidades com Feiras</h3>
-                        <p> 3 títulos (1958, 1960, 1966). Precursora da Liga Europa.</p>
-                    </div>
-                </div>
-        
-                
-                <div class="cartao">
-                    <div class="wrap-img-card">
-                        <img src="./imagens/latina-removebg-preview.png" alt="Copa Latina" width="80px" height="auto">
-                    </div>
-                    <div class="wrap-info-card">
-                        <h3>Copa Latina</h3>
-                        <p>2 títulos (1949, 1952). Competição entre clubes da Espanha, Itália, França e Portugal.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer id="footer">
-            <h2>Redes Sociais Do Barcelona</h2> 
-            <div class="social-icons">
-                <a target="_blank" href="https://www.instagram.com/fcbarcelona?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                    <img width="30px" height="auto" src="./imagens/instagram.png" alt="Instagram">
-                </a>
-                <a target="_blank" href="https://www.youtube.com/channel/UC14UlmYlSNiQCBe9Eookf_A">
-                    <img width="30px" height="auto" src="./imagens/youtube.png" alt="Youtube">
-                </a>
-                <a target="_blank" href="https://x.com/fcbarcelona_br">
-                    <img width="30px" height="auto" src="./imagens/twitter.png" alt="X">
-                </a>
-                <a target="_blank" href="https://www.tiktok.com/@fcbarcelona">
-                    <img width="30px" height="auto" src="./imagens/tiktok.png" alt="Tik Tok">
-                </a>
-            </div>
-        </footer>
-    </main>
 
-    
+    <!-- Conteúdo principal do carrinho -->
+    <div id="conteudo-carrinho">
+        <h1>Carrinho</h1>
+
+        <!-- Lista de itens do carrinho -->
+        <div id="lista"></div>
+
+        <!-- Total do carrinho -->
+        <h2 id="total">Total: $0</h2>
+
+        <!-- Botão "Finalizar a compra" -->
+        <button id="finalizar-compra" onclick="gerarDocumentoWord()">Finalizar a compra</button>
+    </div>
+
+    <!-- Mensagem de sucesso (inicialmente escondida) -->
+    <div id="pedido">
+        <p>Pedido Gerado Com Sucesso. Direcionando A Nota Fiscal No Arquivo Word. Verifique Na Sua Pasta de Download Para Ter Acesso A Nota Fiscal.</p>
+        <button id="fechar-mensagem" onclick="successClose()">❌</button>
+    </div>
 </body>
-
 </html>

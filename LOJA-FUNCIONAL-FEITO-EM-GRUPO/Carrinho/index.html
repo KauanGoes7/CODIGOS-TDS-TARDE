@@ -1,0 +1,69 @@
+<!-- KAUAN - ALGUNS COMANDOS DE CSS E HTML ESTAO NO JS -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- CONFIGURAÇÕES BÁSICAS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Market PS5 - Showroom - Carrinho</title>
+
+    <!-- FONTES E BIBLIOTECAS EXTERNAS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="script.js"></script>
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="img-logo" src="../assets/imagens/logoPS5.webp" alt="Logo" width="150px" height="auto"></a>
+            <a class="nav-link d-lg-none me-2" href="../Loja/index.html">🛒</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="../Loja/index.html">🛒Continuar comprando</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+            
+            
+
+<!-- CONTEÚDO PRINCIPAL -->
+    <div id="conteudo-carrinho">
+        <h1>Carrinho</h1>
+
+        <!-- LISTA DE ITENS -->
+        <div id="lista"></div>
+
+        <!-- TOTAL DA COMPRA -->
+        <h2 id="total">Total: $0</h2>
+
+         <!-- BOTÃO FINALIZAR COMPRA -->
+        <button id="finalizar-compra" class="botao-finalizar-compra" onclick="gerarDocumentoWord()">Finalizar a compra</button>
+    </div>
+
+    <!-- MENSAGEM DE CONFIRMAÇÃO -->
+    <div id="pedido">
+        <p>Pedido Gerado Com Sucesso. Direcionando A Nota Fiscal No Arquivo Word. Verifique Na Sua Pasta de Download Para Ter Acesso A Nota Fiscal.</p>
+
+</body>
+</html>

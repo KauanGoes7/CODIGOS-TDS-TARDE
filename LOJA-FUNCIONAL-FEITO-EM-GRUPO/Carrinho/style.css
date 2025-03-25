@@ -1,0 +1,188 @@
+/*-- KAUAN - ALGUNS COMANDOS DE CSS E HTML ESTAO NO JS */
+/* VARIÁVEIS GLOBAIS */
+:root {
+  --fonte-principal: 'Poppins', sans-serif;
+  --branco: rgb(239, 247, 255);
+  --fundo: #0a1864;
+}
+
+/* RESET PARA BOTÕES DE REMOÇÃO */
+button.remover-item, 
+span.remover-item,
+.remover-item {
+  all: unset !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
+
+/* ESTILOS GERAIS */
+body {
+  font-family: var(--fonte-principal);
+  box-sizing: border-box;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url(/assets/imagens/loginbackground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--branco);
+}
+
+/* NAVBAR */
+.navbar.bg-warning {
+  background-color: black !important;
+  font-weight: bold;
+}
+
+.nav-link {
+  background-color: rgb(62, 71, 196);
+  border-radius: 10px;
+  padding: .5rem 1rem;
+  color: white;
+}
+
+/* CONTEÚDO DO CARRINHO */
+#conteudo-carrinho {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+#total {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+/* BOTÃO FINALIZAR COMPRA */
+.botao-finalizar-compra {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.botao-finalizar-compra:hover {
+  background-color: #45a049;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.7);
+  transform: scale(1.05);
+}
+
+/* MENSAGEM DE PEDIDO */
+/* Ajuste para a mensagem aparecer corretamente no mobile */
+#pedido {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 90vw; /* Garante que não ultrapasse a largura da tela */
+  white-space: normal; /* Permite que o texto quebre linha */
+  text-align: center;
+  z-index: 1000;
+}
+
+
+
+.remover-item {
+  all: unset !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ff4d4d !important;
+  font-size: 10px !important; /* Tamanho menor */
+  width: 16px !important;  /* Definição fixa para evitar que fique grande */
+  height: 16px !important;
+  padding: 0 !important;
+  margin-left: 5px;
+  background: none !important;
+  border: none !important;
+  line-height: 1;
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.remover-item:hover {
+  opacity: 1;
+  color: #ff0000 !important;
+}
+
+
+/* Itens do carrinho */
+.carrinho-item {
+  margin: 8px 0;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+/*pegando codigo de outras pastas 
+/* LOGO */
+.img-logo {
+  transition: transform 0.3s ease;
+  padding: 10px;
+  border-radius: 999px;
+}
+
+.img-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Botões com animação */
+button, .btn, .nav-link, .botao-finalizar-compra {
+  transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover, .nav-link:hover, .botao-finalizar-compra:hover {
+  transform: scale(1.05);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 991.98px) {
+  .navbar-collapse .nav-link {
+    display: none !important;
+  }
+}
+
+@media (width < 230px) {
+  .img-logo {
+    display: none;
+  }
+  li {
+    font-size: 13px;
+    margin: 5px;
+  }
+  button {
+    font-size: 7px;
+    margin: 5px;
+    padding: 10px 11px;
+  }
+  h1 {
+    font-size: 1.5rem;
+    margin: 2px;
+  }
+  #finalizar-compra {
+    font-size: 1rem;
+    padding: 1px 2px;
+    margin: 4px;
+  }
+}
